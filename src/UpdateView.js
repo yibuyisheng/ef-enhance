@@ -73,9 +73,7 @@ define(
                 }
 
                 for (var j = 0, jl = controls.length; j < jl; j++) {
-                    var data = {};
-                    data[controls[j].viewProperty] = change.newValue;
-                    controls[j].control.setProperties(data);
+                    controls[j].control.set(controls[j].viewProperty, change.newValue);
                 }
             }
         }
