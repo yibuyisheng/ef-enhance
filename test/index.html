@@ -117,7 +117,7 @@ require([
     var tableData = [];
     action.on('entercomplete', function () {
         this.view.get('button').on('click', function () {
-            this.model.set('content', new Date().getTime());
+            this.model.set('buttonContent', new Date().getTime());
 
             tableData.push({
                 title: 'title' + new Date().getTime(),
